@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8 />
+    <title>3D model preview</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+        <section id="model-view" class="3d-model-view">
+            <div class="image-container">
+              <div class="row"></div>
+                <model-viewer src="assets/img/mobileCrusher.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="255deg 55deg 20m" poster="" touch-action="pan-y" shadow-intensity="15" auto-rotate>
+                  <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+                  </div>
+                  <button slot="ar-button" id="ar-button">
+                  View in your space
+                  </button>
+                  <div id="ar-prompt">
+                  <img src="/assets/img/ar_hand_prompt.png" alt="ar_hand_prompt.png">
+                </div>
+                </model-viewer> 
+            </div>
+            </div>
+          </section>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/GLTFLoader.js"></script>
+    <script src="assets/js/OrbitControls.js"></script>
+    <script src="assets/js/script2.js"></script>
+  </body>
+</html>
